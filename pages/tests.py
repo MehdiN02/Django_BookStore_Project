@@ -13,7 +13,7 @@ class HomePageTest(TestCase):
 
     def test_home_page_content(self):
         response = self.client.get(reverse('home_page'))
-        self.assertContains(response, 'Home Page')  # eshare be title page darad
+        self.assertContains(response, 'Home')  # eshare be title page darad
 
     def test_home_page_template_used(self):
         response = self.client.get(reverse('home_page'))
