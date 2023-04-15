@@ -14,3 +14,4 @@ class CustomUserChangeForm(UserChangeForm):  # saskht form baraye taghire karbar
     class Meta:
         model = CustomUser
         fields = ['username', 'age', 'email']
+        # fields = UserCreationForm.Meta.fields
