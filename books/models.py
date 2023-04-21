@@ -8,4 +8,4 @@ class Book(models.Model):
     price = models.DecimalField(max_digits=5, decimal_places=2)  # money -> Decimal allways | # decimal_field -> ragham ashar
 
     def __str__(self):
-        return self.title
+        return self.title  # baraye neshan dadan dar panel admin

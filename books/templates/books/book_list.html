@@ -1,0 +1,14 @@
+{% extends '_base.html' %}
+
+{% block page_title %}
+    Book Home
+{% endblock page_title %}
+
+
+{% block content %}
+    {% for book in books %}
+        <h3>{{ book.title }}</h3>
+        <p>{{ book.content }}</p>
+    {% endfor %}
+    
+{% endblock content %}
