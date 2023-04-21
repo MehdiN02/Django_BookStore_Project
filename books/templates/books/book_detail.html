@@ -1,0 +1,15 @@
+{% extends '_base.html' %}
+
+{% block page_title %}
+    جزییات کتاب {{ book.title }}
+{% endblock page_title %}
+
+
+{% block content %}
+    <h3>{{ book.title }}</h3>
+    <p>{{ book.author }}</p>
+    <p>{{ book.content }}</p>
+    <h5>{{ book.price }}</h5>
+    <br>
+    <a class="btn btn-danger" href="{% url 'book_list' %}">Home</a>
+{% endblock content %}

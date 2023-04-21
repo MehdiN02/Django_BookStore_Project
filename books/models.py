@@ -1,4 +1,5 @@
 from django.db import models
+from django.shortcuts import reverse
 
 
 class Book(models.Model):
@@ -9,3 +10,7 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title  # baraye neshan dadan dar panel admin
+
+    def get_absolute_url(self):
+        return reverse('book_detail', args=[self.id])  # baraye neshan dadan detail
+    # ke moaadele in khat code dar template hast {% url 'book_detail' book.id %}
