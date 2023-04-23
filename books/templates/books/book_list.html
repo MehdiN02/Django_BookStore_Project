@@ -14,5 +14,6 @@
             <a class="btn btn-sm btn-info" href="{{ book.get_absolute_url }}">Read More</a>
         </div>
     {% endfor %}
+    <a href="{% url 'book_create' %}">Add New Book</a>
 {% endblock content %}
 
