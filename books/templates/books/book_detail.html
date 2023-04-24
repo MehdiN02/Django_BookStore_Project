@@ -11,5 +11,7 @@
     <p>{{ book.content }}</p>
     <h5>{{ book.price }}</h5>
     <br>
-    <a class="btn btn-danger" href="{% url 'book_list' %}">Book List</a>
+    <a class="btn btn-info" href="{% url 'book_update' book.id %}">Edit</a>
+    <a class="btn btn-danger" href="{% url 'book_delete' book.id %}">Delete</a>
+    <a class="btn btn-link" href="{% url 'book_list' %}">Book List</a>
 {% endblock content %}
