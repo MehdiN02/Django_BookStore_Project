@@ -21,7 +21,7 @@ class BookDetailView(generic.DetailView):
 class BookCreateView(generic.CreateView):
     # ravesh 2 bedone sakht forms.py
     model = Book
-    fields = ['title', 'author', 'content', 'price']
+    fields = ['title', 'author', 'content', 'price', 'cover']
     template_name = 'books/book_create.html'
 
     # ravesh aval sakht forms.py
@@ -32,7 +32,7 @@ class BookCreateView(generic.CreateView):
 
 class BookUpdateView(generic.UpdateView):
     model = Book
-    fields = ['title', 'author', 'content']
+    fields = ['title', 'author', 'content', 'cover']
     template_name = 'books/book_create.html'
 
 

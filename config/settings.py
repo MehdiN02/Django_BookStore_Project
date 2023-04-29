@@ -143,7 +143,10 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 # email config
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-# static file config
+# static file config  | file haye ma dakhel server mizarim
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
 
+# media file  | file hayee ke karbar bargozari mikone da site  | dar hame project yeksane
+MEDIA_URL = '/media/'
+MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
