@@ -8,7 +8,7 @@ from .forms import NewBookForm
 
 class BookListView(generic.ListView):
     model = Book
-    paginate_by = 4  # baraye kozashtan 4 ketab dar har safhe
+    paginate_by = 4
     template_name = 'books/book_list.html'
     context_object_name = 'books'
 
