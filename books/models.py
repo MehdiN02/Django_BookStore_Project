@@ -13,7 +13,7 @@ class Book(models.Model):
         return self.title  # baraye neshan dadan dar panel admin
 
     def get_absolute_url(self):
-        return reverse('book_detail', args=[self.id])  # baraye neshan dadan detail
+        return reverse('book_detail', args=[self.id])  # baraye create view estefade mishavad ke bad az create be safhe detail beravad
     # ke moaadele in khat code dar template hast {% url 'book_detail' book.id %}
 
 
