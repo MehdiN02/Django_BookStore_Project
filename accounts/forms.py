@@ -6,7 +6,7 @@ from .models import CustomUser
 class CustomUserCreationForm(UserCreationForm): 
     class Meta:
         model = CustomUser
-        fields = ['username', 'age', 'email'] # baraye shakht user jadid
+        fields = ['username', 'age', 'email']
         # fields = UserCreationForm.Meta.fields + ('age',)
 
 
