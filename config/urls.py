@@ -25,4 +25,7 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/', include('accounts.urls')),
     path('books/', include('books.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)   # dar hame project yeksane hefz shavasd
+# code bala faghat baraye localhost ast va baraye deploy kardan site bayad hazf shavad
+
+

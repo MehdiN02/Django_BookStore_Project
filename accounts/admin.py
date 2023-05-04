@@ -6,12 +6,12 @@ from .forms import CustomUserCreationForm, CustomUserChangeForm
 
 
 # @admin.register(CustomUser)
-class CustomUserAdmin(UserAdmin):
+class CustomUserAdmin(UserAdmin):  # baraye neshan dadan dar admin site
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm
     model = CustomUser
     list_display = ['username', 'email', 'age', 'is_staff']
-    fieldsets = UserAdmin.fieldsets + (
+    fieldsets = UserAdmin.fieldsets + (   # bayad hefz shavad
         (None, {'fields': ('age',)}),
     )
     add_fieldsets = UserAdmin.add_fieldsets + (
